@@ -52,9 +52,11 @@ func _on_append_array_vector_button_pressed() -> void:
 func _on_save_to_csv_button_pressed() -> void:
 	Metrics.export_to_csv()
 
-
-
-
+func _on_open_save_folder_pressed() -> void:
+	var ruta_absoluta = ProjectSettings.globalize_path(Metrics.CSV_PATH)
+	var resultado = OS.shell_open(ruta_absoluta)
+	if resultado != OK:
+		print("no se pudo abrir el archivo")
 
 
 func desactivar_botones():

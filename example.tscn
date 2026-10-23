@@ -108,6 +108,11 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Save to CSV"
 
+[node name="OpenSaveFile" type="Button" parent="CanvasLayer/Control/VBoxContainer" unique_id=578860086]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Open Saved File"
+
 [connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/RegisterButton" to="." method="_on_register_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/StartSessionButton" to="." method="_on_start_session_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/HBoxContainer/SetGrid/RecordMetricButton" to="." method="_on_record_metric_button_pressed"]
@@ -120,3 +125,4 @@ text = "Save to CSV"
 [connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/HBoxContainer/Add/Add Vector3" to="." method="_on_add_vector_3_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/AppendArrayVectorButton" to="." method="_on_append_array_vector_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/SaveToCSVButton" to="." method="_on_save_to_csv_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/OpenSaveFile" to="." method="_on_open_save_folder_pressed"]
