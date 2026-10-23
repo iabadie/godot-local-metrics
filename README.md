@@ -1,4 +1,4 @@
-# Addon de métricas locales
+# Métricas locales para Godot Engine 4.x
 
 Este addon permite trackear métricas customizadas y alamacenar los resultados en un archivo csv
 las métricas se almacenan por sesiones, los desarrolladores deben encargarse de decidir
